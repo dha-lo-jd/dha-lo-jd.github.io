@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Car AI DJ — personal project</title>
+<style>
+  body { font-family: system-ui, -apple-system, "Segoe UI", "Hiragino Sans", "Yu Gothic", sans-serif; line-height: 1.7; max-width: 46rem; margin: 2rem auto; padding: 0 1rem; color: #222; }
+  h1 { font-size: 1.6rem; } h2 { font-size: 1.15rem; margin-top: 2rem; }
+  code { background: #f2f2f2; padding: 0 .25em; border-radius: 3px; }
+  hr { margin: 2.5rem 0; border: 0; border-top: 1px solid #ddd; }
+  @media (prefers-color-scheme: dark) { body { background: #151515; color: #e6e6e6; } code { background: #2a2a2a; } hr { border-top-color: #333; } }
+</style>
+</head>
+<body>
+
+<h1>Car AI DJ</h1>
+<p>A personal, non-commercial Android app by an individual developer. <a href="#ja">日本語はこちら</a></p>
+
+<h2>What it is</h2>
+<p>Car AI DJ runs on my own phone while I drive. It chooses the next tracks to play in YouTube Music, based on my own listening history and on plain-language preferences I enter (for example, a mood or a type of music). The app is for my own use only: it is not published or distributed, it has no other users, it does not show ads, and it does not make money.</p>
+
+<h2>How it uses the YouTube Data API</h2>
+<p>The app uses the YouTube Data API v3 only to look up public information, with an API key. It does not access any user account data.</p>
+<ul>
+  <li><code>search.list</code>: find an artist's official channel, or a specific song when the channel does not list it.</li>
+  <li><code>playlistItems.list</code>: read the public uploads of an artist's official channel to find songs that are new to me.</li>
+  <li><code>videos.list</code>: check duration, playability and title of candidate videos before adding them to my queue.</li>
+</ul>
+<p>Playback is done by the official YouTube Music app. The app does not download, re-host or re-stream any video or audio.</p>
+
+<h2>Contact</h2>
+<p><a href="mailto:20261122-github-dha-lo-jd@dha1024blame.sakura.ne.jp">20261122-github-dha-lo-jd@dha1024blame.sakura.ne.jp</a></p>
+
+<hr>
+
+<div id="ja" lang="ja">
+<h1>Car AI DJ（個人プロジェクト）</h1>
+<p>個人が開発している、非営利の Android アプリです。</p>
+
+<h2>概要</h2>
+<p>運転中に、自分のスマートフォンで使う「AI DJ」です。自分の再生履歴と、自分で入力した言葉の好み（雰囲気や音楽の種類など）をもとに、YouTube Music で次に流す曲を選びます。自分だけが使うアプリで、公開も配布もしておらず、他の利用者はいません。広告の表示も、収益化もありません。</p>
+
+<h2>YouTube Data API の使い方</h2>
+<p>YouTube Data API v3 を、API キーで、公開情報の検索にだけ使います。ユーザーアカウントのデータには、アクセスしません。</p>
+<ul>
+  <li><code>search.list</code>: アーティストの公式チャンネル、またはチャンネルの一覧にない曲を探します。</li>
+  <li><code>playlistItems.list</code>: アーティストの公式チャンネルの公開アップロードを読み、自分にとって新しい曲を探します。</li>
+  <li><code>videos.list</code>: 候補の動画の長さ・再生可否・題名を、キューに加える前に確認します。</li>
+</ul>
+<p>再生は、公式の YouTube Music アプリが行います。このアプリは、動画や音声のダウンロード、再配信、再ホストをしません。</p>
+
+<h2>連絡先</h2>
+<p><a href="mailto:20261122-github-dha-lo-jd@dha1024blame.sakura.ne.jp">20261122-github-dha-lo-jd@dha1024blame.sakura.ne.jp</a></p>
+</div>
+
+</body>
+</html>
